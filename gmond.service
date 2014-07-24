@@ -6,7 +6,7 @@ Type=simple
 Restart=always
 RestartSec=5
 EnvironmentFile=/etc/environment
-Environment="TAG=0.0.1"
+Environment="TAG=0.0.2"
 Environment="ENV=test"
 ExecStart=/usr/bin/docker run --name gmond \
                               --env GMOND_DEBUG_LEVEL=1 \
