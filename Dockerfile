@@ -9,11 +9,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 ADD ./conf/gmond.conf /etc/ganglia/
 ADD ./start.sh /
 
-# # Zookeeper peer port
-# EXPOSE 2888
-# # Zookeeper leader (election) port
-# EXPOSE 3888
 # sFlow collector port (UDP)
 EXPOSE 6343/udp
+# gmetad polling port
+EXPOSE 8649
 
 CMD ["/start.sh"]
