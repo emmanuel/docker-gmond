@@ -1,4 +1,4 @@
-FROM emmanuel/java-openjdk-7-jre-headless:0.0.2
+FROM emmanuel/baseimage-ubuntu-core-1404:0.0.1
 MAINTAINER Emmanuel Gomez "emmanuel@gomez.io"
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
